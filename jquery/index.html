@@ -29,9 +29,8 @@ $(document).ready(function(){
   $('body').css('background', 'pink');
 
   $('#wordarea').on('keyup change', function() {
-
     var $charCount = $("#wordarea").val().length;
-    var $wordCount = $("#wordarea").val().split(" ").length;
+    var $wordCount = $("#wordarea").val().split(" ").length -1;
 
     $('#wordcount').text($wordCount);
     $('#charactercount').text($charCount);
