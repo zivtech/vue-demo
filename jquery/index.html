@@ -1,0 +1,42 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="stats">
+    <div>
+      Word count: <span id="wordcount"></span>
+    </div>
+    <div>
+      Character count: <span id="charactercount"></span>
+    </div>
+  </div>
+  <div id="words">
+    <textarea id="wordarea" rows="30" cols="100"></textarea>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $('body').css('background', 'pink');
+
+  $('#wordarea').on('keyup change', function() {
+
+    var $charCount = $("#wordarea").val().length;
+    var $wordCount = $("#wordarea").val().split(" ").length;
+
+    $('#wordcount').text($wordCount);
+    $('#charactercount').text($charCount);
+  });
+});
+</script>
+</body>
+</html>
