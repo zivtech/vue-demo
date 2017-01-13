@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <hello></hello>
+    <stats></stats>
+    <!--<replay></replay>-->
+    <chart></chart>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
+import Stats from './components/Stats.vue'
+import Replay from './components/Replay.vue'
+import Chart from './components/Chart.vue'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Stats,
+    Replay,
+    Chart,
   }
 }
 </script>

@@ -1,1 +1,0 @@
-console.error("Error: Vue template compilation failed while parsing file: /Users/lliss/Documents/projects/wordstats/src/components/Hello.vue");

@@ -1,4 +1,5 @@
 .DS_Store
 node_modules
-dist/build.js
-dist/build.css
+*/node_modules
+vue/dist/build.js
+vue/dist/build.css
